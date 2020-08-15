@@ -1,2 +1,0 @@
-# sohamdeogaonkar.github.io
-soham
