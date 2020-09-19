@@ -1,0 +1,86 @@
+<html data-whatinput="initial" data-whatintent="mouse"><head>
+      <link rel="icon" href="favicon.ico">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>BotsArchive</title>
+    <!-- Primary Meta Tags -->
+    <title>BotsArchive</title>
+    <meta name="title" content="BotsArchive">
+    <meta name="description" content="The most powerful archive of Telegram bots.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://botsarchive.com/">
+    <meta property="og:title" content="BotsArchive">
+    <meta property="og:description" content="The most powerful archive of Telegram bots.">
+    <meta property="og:image" content="https://i.ibb.co/HT5ywx1/Banner-Blue.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://botsarchive.com/">
+    <meta property="twitter:title" content="BotsArchive">
+    <meta property="twitter:description" content="The most powerful archive of Telegram bots.">
+    <meta property="twitter:image" content="https://i.ibb.co/HT5ywx1/Banner-Blue.png">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/dev.css">
+    <link href="css/foundation.css" as="style" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/carousel/owl.carousel.css">
+    <link rel="stylesheet" href="css/carousel/owl.theme.default.css">
+
+<meta class="foundation-mq"></head>
+  <body style="background-color: #F4F5F9;">
+
+      <div class="off-canvas position-left is-transition-overlap is-closed" id="offCanvasLeft1" data-off-canvas="capyih-off-canvas" aria-hidden="true">
+            <button class="offcanvas-full-screen-close" aria-label="Close menu" type="button" data-close="" style="cursor: pointer;">
+              <span aria-hidden="true">×</span>
+            </button>
+        
+            <ul class="offcanvas-full-screen-menu">
+              <li><a href="index.html" style="font-size: 30px">Home</a></li>
+              <li><a href="about.html" style="font-size: 30px">About us</a></li>
+              <li><a href="docs.html" style="font-size: 30px">API</a></li>
+            </ul>
+        </div><div class="js-off-canvas-overlay is-overlay-fixed"></div>
+
+    <div class="grid-x grid-margin-x" style="height: 0px;">
+
+      <div id="left">
+          <span class="bg-white-circle" data-toggle="offCanvasLeft1" aria-expanded="false" aria-controls="offCanvasLeft1"><button class="menu-icon dark" type="button"></button></span>
+      </div>
+
+      <div id="center">
+        
+      </div>
+    </div>
+
+      <div id="right" align="right">
+        <span style="cursor: pointer;" class="bg-white-circle" onclick="window.open('https:\/\/t.me/BotsArchive', '_blank');"><i class="fas fa-bullhorn" style="font-size: 20px; color: #4268E7; height: 10px; width: 20px;"></i></span>
+
+        <form class="search" action="/search.html">
+          <input type="text" name="q" placeholder="Search" id="search">
+          <button type="submit" value="Submit" style="cursor: pointer;"><i class="fa fa-search"></i></button>
+        </form>
+
+      </div>
+
+    <div style="margin-top: 60px;">
+        <h1><a href="index.html" style="color:#4268E7">BOTSARCHIVE</a></h1>
+        <p id="dev-name">SD Developers</p>
+        <p id="dev-description">We creates different types of useful bot for telegram members</p>
+    </div>
+
+    <div id="results">
+
+    <div class="result" onclick="window.location='bot.html?u=@transalator_bot'"><div class="side-color"></div><div class="content"><img alt="@transalator_bot" class="lazy loaded" src="https://www.botsarchive.com/img/1171.jpg" data-src="https://www.botsarchive.com/img/1171.jpg" id="result-bot-image" data-was-processed="true"><p class="result-bot-name">Transalator Bot</p><p class="result-bot-description">A simple translator bot for communicating with people from all the world with ease.</p></div></div></div>
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.5.0/dist/lazyload.min.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/dev.js"></script>
+
+</body></html>
