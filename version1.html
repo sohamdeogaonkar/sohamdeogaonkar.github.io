@@ -5,10 +5,13 @@
 <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' >
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script>
-$(window).load(function(){
-    $("#topnav").fadeout(1500);
 
+    $(document).ready(function(){
+   // PAGE IS FULLY LOADED  
+   // FADE OUT YOUR OVERLAYING DIV
+   $('#overlay').fadeOut(1500);
 });
+
 </script>
 </head>
 
@@ -17,10 +20,19 @@ $(window).load(function(){
 <style>
 body {
   margin: 0;
-  background:#262626;
+  background:white;
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.overlay{
+  position:fixed;
+  z-index:99999;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  background:#262626;
+}
 
 .loading
 {
@@ -152,8 +164,10 @@ body {
 </style>
 
 <body>
- <div class="loading" id="loadingbar">
+ <div class="overlay" id="overlay">
+ <div class="loading">
  <div class="loading-text">Soham Deogaonkar</div>
+ </div>
  </div>
           
           
