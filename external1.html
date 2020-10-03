@@ -9,6 +9,7 @@ $(document).ready(function(){
 $.ajax({ type: "GET",   
          url: "http://github.sohamdeogaonkar.tk/hi.json",   
          async: false,
+         dataType: "json",
          success : function(text)
          {
              response = text;
