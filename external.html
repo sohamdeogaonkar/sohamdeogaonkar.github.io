@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://github.com/padolsey/jQuery-Plugins/blob/master/cross-domain-ajax/jquery.xdomainajax.js"></script>
+<script>
+$(document).ready(function(){
+   $("button").click(function(){
+         $.ajax({
+           url: 'https://jsonplaceholder.typicode.com/todos/1',
+           type: 'GET',
+           success: function(res) {
+             var content = $(res.responseText).text();
+             alert(content);
+           }
+         });
+       }
+       }
+</script>
+</head>
+<body>
+
+<button>Send an HTTP GET request to a page and get the result back</button>
+
+</body>
+</html>
