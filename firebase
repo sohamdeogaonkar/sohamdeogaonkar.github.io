@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+  <title>Soham Deogaonkar</title>
+  <head> 
+    <meta charset="UTF-8">
+    <meta name="description" content="Welcome to my personal Website">
+    <meta name="keywords" content="Soham Deogaonkar">
+    <meta name="viewport" content="width=device-width, height=device-height,  initial-scale=1.0, user-scalable=no, user-scalable=0;"/>
+    <link rel="icon" type="image/x-icon" href="/images/logo.ico"/>
+  
+    <base target="_top">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+  
+    $(document).ready(function(){
+    $('#overlay').fadeOut(1500);
+    });
+    </script>
+  </head>
+
+<style>
+body {
+  margin: 0;
+  background:white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.overlay{
+  position:fixed;
+  z-index:99999;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  background:#262626;
+}
+
+.loading
+{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  width:270px;
+  height:270px;
+  background:#262626;
+  border:3px solid #3c3c3c;
+  border-radius:50%;
+  text-shadow:0 0 5px #ffffff;
+  box-shadow:0 0 20px rgb(207, 33, 33);
+}
+.loading-text{
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  font-family:sans-serif;
+  font-size:20px;
+  color:white;
+  letter-spacing:3px;
+  text-transform:uppercase;
+  }
+.loading:before
+{
+  content:'';
+  position:absolute;
+  width:100%;
+  height:100%;
+  border:3px solid transparent;
+  border-bottom: 3px solid #ff0000;
+  border-top:3px solid #ff0000;
+  border-radius:50%;
+  animation:animateC 2s linear infinite;
+}
+
+@keyframes animateC
+{
+  0%
+  {
+    transform:rotate(0deg);
+  }
+  100%
+  {
+    transform:rotate(360deg);
+  }
+}
+@keyframes animate
+{
+  0%
+  {
+    transform:rotate(45deg);
+  }
+  100%
+  {
+    transform:rotate(405deg);
+  }
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a{display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.w3-overlay{position:fixed;display:none;width:100%;height:100%;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,0.5);z-index:99}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+</style>
+
+<body>
+ <div class="overlay" id="overlay">
+  <div class="loading">
+   <div class="loading-text">
+    Soham Deogaonkar
+   </div>
+  </div>
+ </div>
+ 
+ <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.22.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.22.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyCm_2dEgdPQJOKx4yxSXZANSaMsgLv_1dE",
+    authDomain: "ourdatabase-2020.firebaseapp.com",
+    databaseURL: "https://ourdatabase-2020.firebaseio.com",
+    projectId: "ourdatabase-2020",
+    storageBucket: "ourdatabase-2020.appspot.com",
+    messagingSenderId: "784806924925",
+    appId: "1:784806924925:web:3170bdb4f2bfc8f7189714",
+    measurementId: "G-TQXZ1MGR2T"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+          
+          
+<div class="topnav" id="myTopnav">
+  <a href="#home">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+  <a href="javascript:void(0);" class="icon" onclick="openNav()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
+
+<div class="w3-overlay " onclick="closeNav()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("myOverlay").style.display = "block";
+
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("myOverlay").style.display = "none";
+
+}
+</script>
+   
+</body>
+</html> 
